@@ -46,6 +46,8 @@ class Player():
 
     def stop_jumping(self):
         self.is_jumping = False
+    def start_jumping(self):
+        self.is_jumping = True
 
     def setfloor_height(self,y):
         self.floor_height = y

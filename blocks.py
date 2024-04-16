@@ -19,4 +19,4 @@ class Blocks():
         return pygame.Rect(self.blocks_x,self.blocks_y,self.blocks_width,self.blocks_height)
 
     def get_height(self):
-        return blocks_y
+        return self.blocks_y

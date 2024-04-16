@@ -50,9 +50,14 @@ while True:
     screen.fill((255, 255, 255))
 
     collision_index = p1.get_rect().collidelist(blocks_rect)
-    print(collision_index)
+    # print(collision_index)
     if collision_index != -1:
         p1.stop_jumping()
+        print(blocks[collision_index].get_height())
+        p1.setfloor_height(blocks[collision_index].get_height())
+    else:
+        # p1.start_jumping()
+        p1.setfloor_height(HEIGHT)
 
 
     # Blit the background onto the screen
